@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -24,4 +27,52 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px;
+}
+
+.footer {
+  background-color: #eee;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  /* If we had more than one item in .main-container,
+  we would probably need to add 'justify-content' to this statement */
+  align-items: center;
+  gap: 10px;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  padding: 10px;
 }
